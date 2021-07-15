@@ -43,7 +43,7 @@ int crossing(int a[],int n){      // input is an array return segement where tur
                         x.push_back(x[x.size()-1]);
                 }
             }
-        else if(i%4==3){                            //now for -ve x direction <-            
+        if(i%4==3){                            //now for -ve x direction <-            
             for(int j=0;j<a[i];j++){                          //              
                 for(int k=0;k<y.size();k++){
                     if(y[k]==y[y.size()-1] && x[k]==j)           //checking if this coordinate already exist
