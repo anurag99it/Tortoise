@@ -9,7 +9,7 @@ using namespace std;
 vector<int> x;
 vector<int> y;
 
-int crossing(int a[],int n){
+int crossing(int a[],int n){      // input is an array return segement where turtle crosses its own path
     x.push_back(0);             // setting initial coordinates to (0,0)
     y.push_back(0);
     for(int i=0;i<n;i++){                //traversing for whole array  ^
